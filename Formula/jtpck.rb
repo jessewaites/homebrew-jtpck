@@ -5,21 +5,21 @@
 class Jtpck < Formula
   desc "CLI tool for configuring OpenTelemetry in Claude Code, Codex, and Gemini CLI"
   homepage "https://github.com/jessewaites/jtpck-installer"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jessewaites/jtpck-installer/releases/download/v0.1.4/jtpck-installer_Darwin_x86_64.tar.gz"
-      sha256 "97339b2fcfc00c4804e757a74c856f3343856307ac837fc7b7aa5d4b9849dd51"
+      url "https://github.com/jessewaites/jtpck-installer/releases/download/v0.1.5/jtpck-installer_Darwin_x86_64.tar.gz"
+      sha256 "dfba224ec13bcea3bd0e731435a45d67fcb66333d0f6f718b2f257cd2eb9c9de"
 
       def install
         bin.install "jtpck"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jessewaites/jtpck-installer/releases/download/v0.1.4/jtpck-installer_Darwin_arm64.tar.gz"
-      sha256 "09a6f137412ab86fb78188db4242b027c1d082b53ea86ec369fdac41a71ef8d6"
+      url "https://github.com/jessewaites/jtpck-installer/releases/download/v0.1.5/jtpck-installer_Darwin_arm64.tar.gz"
+      sha256 "7af06dfe84d7e3ca100c44f068c08746d82503faa7153f8ccc04b41ab27f6ca7"
 
       def install
         bin.install "jtpck"
@@ -29,15 +29,15 @@ class Jtpck < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jessewaites/jtpck-installer/releases/download/v0.1.4/jtpck-installer_Linux_x86_64.tar.gz"
-      sha256 "526cf13fb5349657b517d39160fbec06ad41164022bbf3f2ec9b19125edff699"
+      url "https://github.com/jessewaites/jtpck-installer/releases/download/v0.1.5/jtpck-installer_Linux_x86_64.tar.gz"
+      sha256 "d8f8ca800b15986f668ffaee16576158c7a4b736984d0e05b0e748f4fe72e65d"
       def install
         bin.install "jtpck"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jessewaites/jtpck-installer/releases/download/v0.1.4/jtpck-installer_Linux_arm64.tar.gz"
-      sha256 "528505ec2b684068bcd2e5a63e604f12e71136b643cd0fbe1298b2fb46ba1734"
+      url "https://github.com/jessewaites/jtpck-installer/releases/download/v0.1.5/jtpck-installer_Linux_arm64.tar.gz"
+      sha256 "bd401f2a074d57efdb2bae4931da4e579278d5345a48df1245bb1d85e25c4ebb"
       def install
         bin.install "jtpck"
       end
